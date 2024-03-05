@@ -138,7 +138,7 @@ button {
 
         h2 {
             margin-bottom: 10px;
-            font-weight: normal;
+            //font-weight: normal;
         }
 
         p {
@@ -217,7 +217,7 @@ button {
 
 h2 {
     width: 100%;
-    font-size: 26px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -232,6 +232,56 @@ label {
         color: #cfcfcf;
         text-transform: uppercase;
     }
+
+}
+
+div {
+    span{
+        font-size: 12px;
+        color: #cfcfcf;
+        text-transform: uppercase;
+    }
+}
+
+.genderSelect{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.genderSelect input[type=radio]{
+    display: none;
+}
+
+.genderSelect input[type=radio]+label {
+    display: inline-block;
+    cursor: pointer;
+    height: 24px;
+    width: 90px;
+    border: 1px solid #333;
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+    font-size:13px;
+    background-color: #fff;
+    color: #333;
+}
+
+.genderSelect input[type=radio]:checked+label {
+    background-color: #333;
+    color: #fff;
+}
+
+.college-select,.major-select{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    text-align: center;
 }
 
 input {
@@ -284,6 +334,7 @@ input {
     @include signUpActive {
         transform: translate3d(0, 0, 0);
     }
+    overflow: auto;
 }
 
 .icon-link {
